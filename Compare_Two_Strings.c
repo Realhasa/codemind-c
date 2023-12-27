@@ -1,17 +1,26 @@
-#include<stdio.h>
-#include<string.h>
+#include<stdio.h>//using with out header file
 int main()
 {
-    char s1[29],s2[88];
+
+    char sr1[20],sr2[33];
     scanf("%[^
-]s",s1);
+]s",sr1);
     scanf(" %[^
-]s",s2);
-    int res= strcmp(s1,s2);
-    if(res==0) {
-        printf("Strings are Equal");
+]s",sr2);
+    int flag=0;
+    for(int i=0;sr1[i]!=NULL;i++){
+     if(sr1[i]==sr2[i]){
+
+     }
+     else{
+        flag=1;
+        break;
+     }
+    }
+    if(flag==1){
+    printf("Strings are not Equal");
     }
     else{
-        printf("Strings are not Equal");
+        printf("Strings are Equal");
     }
 }
